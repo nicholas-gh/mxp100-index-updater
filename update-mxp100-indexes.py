@@ -3,6 +3,9 @@
 import sys
 import os
 
+if len(sys.argv) != 2:
+    print "Usage: %s PATH_TO_MXP_DISK" % sys.argv[0]
+    sys.exit(2)
 ROOT = sys.argv[1]
 
 PLAYLIST_NAME = "Default Playlist.epl"
