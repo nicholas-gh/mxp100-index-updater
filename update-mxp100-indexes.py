@@ -27,6 +27,9 @@ def has_music_children(path):
                 return True
     return False
 
+
+os.system("chmod -R u+w %s" % ROOT)
+
 for dir, dirs, files in os.walk(ROOT):
     if PLAYLIST_NAME in files:
         os.unlink(os.path.join(dir, PLAYLIST_NAME))
