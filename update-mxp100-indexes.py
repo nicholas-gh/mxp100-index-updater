@@ -63,3 +63,5 @@ n = pynotify.Notification("e.Digital MXP100 Sync", "Index update completed.", "g
 n.set_urgency(pynotify.URGENCY_NORMAL)
 #n.set_timeout(pynotify.EXPIRES_NEVER)
 n.show()
+
+os.system("umount %s" % ROOT)
